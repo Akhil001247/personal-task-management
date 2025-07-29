@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 
-const allowedOrigins = ["https://personal-task-management-frontend-k.vercel.app"];
+const allowedOrigins = ["https://personal-task-management-frontend-kwsl-5juzhfb9g.vercel.app"];
 
 app.use(cors({
   origin: allowedOrigins,
