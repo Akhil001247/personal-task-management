@@ -9,7 +9,12 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+const allowedOrigins = ["https://personal-task-management-frontend.vercel.app"];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, 
+}));
 
 app.use(express.json());
 
